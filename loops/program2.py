@@ -9,3 +9,16 @@ elif (a < b):
 else:
     print("a and b is equal")
 
+
+#Program 13 - WAp find factorial of first n number using for loop
+num = int(input("Enter a number: "))
+factorial = 1
+
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
+elif num == 0:
+    print("The factorial of 0 is 1.")
+else:
+    for i in range(1, num + 1):
+        factorial *= i
+    print(f"The factorial of {num} is: {factorial}")
